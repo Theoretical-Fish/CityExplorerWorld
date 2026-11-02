@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityExplorerWorld", "CityExplorerWorld.csproj", "{E86CD9A6-F589-4843-94BA-4D42C732327F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E86CD9A6-F589-4843-94BA-4D42C732327F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86CD9A6-F589-4843-94BA-4D42C732327F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E86CD9A6-F589-4843-94BA-4D42C732327F}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{E86CD9A6-F589-4843-94BA-4D42C732327F}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{E86CD9A6-F589-4843-94BA-4D42C732327F}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{E86CD9A6-F589-4843-94BA-4D42C732327F}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

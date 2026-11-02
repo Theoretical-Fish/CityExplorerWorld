@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jamie\\OneDrive\\Documents\\GitHub\\city-explorer-world\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0A9AD58-6D9B-4246-9551-B232081766F6}|CityExplorerWorld.csproj|c:\\users\\jamie\\onedrive\\documents\\github\\city-explorer-world\\scripts\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0A9AD58-6D9B-4246-9551-B232081766F6}|CityExplorerWorld.csproj|solutionrelative:scripts\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FpsController.cs",
+              "DocumentMoniker": "C:\\Users\\jamie\\OneDrive\\Documents\\GitHub\\city-explorer-world\\scripts\\FpsController.cs",
+              "RelativeDocumentMoniker": "scripts\\FpsController.cs",
+              "ToolTip": "C:\\Users\\jamie\\OneDrive\\Documents\\GitHub\\city-explorer-world\\scripts\\FpsController.cs",
+              "RelativeToolTip": "scripts\\FpsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T10:20:13.674Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

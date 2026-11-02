@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://5xm8hh4rbn3a"]
+
+[ext_resource type="PackedScene" uid="uid://dke0kq4tfxjh2" path="res://fps_controller.tscn" id="1_oj3tl"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cgngl"]
+
+[sub_resource type="Sky" id="Sky_cgngl"]
+sky_material = SubResource("ProceduralSkyMaterial_cgngl")
+
+[sub_resource type="Environment" id="Environment_oj3tl"]
+background_mode = 2
+sky = SubResource("Sky_cgngl")
+ambient_light_source = 3
+ambient_light_energy = 10.37
+reflected_light_source = 2
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_oj3tl"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_am5we"]
+material = SubResource("ORMMaterial3D_oj3tl")
+size = Vector2(50, 50)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_oj3tl"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_cgngl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mpjra"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_fp4km"]
+
+[node name="World" type="Node3D" unique_id=1829190397]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1451389288]
+environment = SubResource("Environment_oj3tl")
+
+[node name="FloorPlane" type="MeshInstance3D" parent="." unique_id=719814975]
+mesh = SubResource("PlaneMesh_am5we")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="FloorPlane" unique_id=1834585273]
+physics_material_override = SubResource("PhysicsMaterial_oj3tl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FloorPlane/StaticBody3D" unique_id=1119162383]
+shape = SubResource("WorldBoundaryShape3D_cgngl")
+
+[node name="PlayerNode" type="Node3D" parent="." unique_id=497670931]
+
+[node name="CharacterBody3D" parent="PlayerNode" unique_id=663543305 instance=ExtResource("1_oj3tl")]
+transform = Transform3D(-0.94950444, 0, -0.31375355, 0, 1, 0, 0.31375355, 0, -0.94950444, 0, 1.0742049, 0)
+rotation_edit_mode = 2
+
+[node name="Environment" type="Node3D" parent="." unique_id=1781792069]
+
+[node name="Building1" type="Node3D" parent="Environment" unique_id=3626020]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Environment/Building1" unique_id=444330053]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -6.194491, 3.4043927, 7.371082)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Building1/StaticBody3D" unique_id=1206459936]
+shape = SubResource("BoxShape3D_mpjra")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Building1/StaticBody3D/CollisionShape3D" unique_id=189075238]
+mesh = SubResource("BoxMesh_fp4km")
+
+[node name="Building2" type="Node3D" parent="Environment" unique_id=624935947]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Environment/Building2" unique_id=2062427155]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -6.194491, 1.6547914, 16.299093)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Building2/StaticBody3D" unique_id=855368847]
+shape = SubResource("BoxShape3D_mpjra")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Building2/StaticBody3D/CollisionShape3D" unique_id=1047480255]
+mesh = SubResource("BoxMesh_fp4km")
+
+[node name="Building3" type="Node3D" parent="Environment" unique_id=647679982]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Environment/Building3" unique_id=1810110510]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 7.747936, -0.3359027, 16.299093)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Building3/StaticBody3D" unique_id=691522700]
+shape = SubResource("BoxShape3D_mpjra")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Building3/StaticBody3D/CollisionShape3D" unique_id=1336024052]
+mesh = SubResource("BoxMesh_fp4km")
+
+[node name="Building4" type="Node3D" parent="Environment" unique_id=1500500070]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Environment/Building4" unique_id=1607453096]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 7.747936, 3.6581702, 6.4186153)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Building4/StaticBody3D" unique_id=2136119854]
+shape = SubResource("BoxShape3D_mpjra")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Building4/StaticBody3D/CollisionShape3D" unique_id=1159302937]
+mesh = SubResource("BoxMesh_fp4km")

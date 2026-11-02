@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dke0kq4tfxjh2"]
+
+[ext_resource type="Script" uid="uid://rjr0yfkex0lm" path="res://scripts/FpsController.cs" id="1_ja5wc"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fp4km"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_am5we"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=663543305 node_paths=PackedStringArray("CAMERA_CONTROLLER")]
+script = ExtResource("1_ja5wc")
+CAMERA_CONTROLLER = NodePath("CameraController/Camera3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1227103331]
+shape = SubResource("CapsuleShape3D_fp4km")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D" unique_id=423885347]
+mesh = SubResource("CapsuleMesh_am5we")
+
+[node name="CameraController" type="Node3D" parent="." unique_id=677054925]
+
+[node name="Camera3D" type="Camera3D" parent="CameraController" unique_id=68314904]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.71510303, -0.36976564)
+
+[node name="SpawnPoint" type="Node3D" parent="." unique_id=231836847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6420727, -3.0205276)
+
+[node name="SpawnMarker" type="Marker3D" parent="SpawnPoint" unique_id=1438532656]
